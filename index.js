@@ -65,7 +65,6 @@ cron.schedule('*/5 * * * *', function () {
 	// console.log('Running Cron Job');
 
 	getBitcoinPrice();
-	console.log('getBitcoinPrice');
 
 	// fs.appendFile('./error.log', newData, function (err) {
 	// 	if (err) {
