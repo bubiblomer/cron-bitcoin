@@ -6,9 +6,6 @@ const { format } = require('date-fns');
 
 require('dotenv').config();
 
-//now's date and time
-const now = format(new Date(), 'yyyy--dd|HH:mm:ss');
-
 let url = 'https://www.blockchain.com/ticker';
 let settings = { method: 'Get' };
 
@@ -19,6 +16,9 @@ let newData = '';
 app = express();
 
 const getBitcoinPrice = () => {
+	//now's date and time
+	const now = format(new Date(), 'yyyy--dd|HH:mm:ss');
+
 	fetch(url, settings)
 		.then((res) => res.json())
 		.then((json) => {
