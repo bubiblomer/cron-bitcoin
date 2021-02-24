@@ -60,7 +60,7 @@ const getBitcoinPrice = () => {
 getBitcoinPrice();
 
 // Remove the error.log file every 5 minutos
-cron.schedule('*/5 * * * *', function () {
+cron.schedule('5 * * * *', function () {
 	// console.log('---------------------');
 	// console.log('Running Cron Job');
 
