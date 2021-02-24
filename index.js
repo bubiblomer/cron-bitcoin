@@ -17,7 +17,7 @@ app = express();
 
 const getBitcoinPrice = () => {
 	//now's date and time
-	const now = format(new Date(), 'yyyy-mm-dd|HH:mm:ss');
+	const now = format(new Date(), 'yyyy-MM-dd|HH:mm:ss');
 
 	fetch(url, settings)
 		.then((res) => res.json())
